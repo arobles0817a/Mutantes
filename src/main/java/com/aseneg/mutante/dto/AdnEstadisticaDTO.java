@@ -5,7 +5,6 @@
  */
 package com.aseneg.mutante.dto;
 
-import lombok.Getter;
 import lombok.Setter;
 
 /**
@@ -13,7 +12,6 @@ import lombok.Setter;
  * @author Ing.Arobles
  */
 @Setter
-@Getter
 public class AdnEstadisticaDTO {
 
     private Integer countMmutantDna;

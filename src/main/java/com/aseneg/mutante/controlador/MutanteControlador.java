@@ -42,15 +42,18 @@ public class MutanteControlador {
     @PostMapping()
     public ResponseEntity verificaAdn(@RequestBody AdnDTO adnDTO) {
         MutanteEntidad entidad = new MutanteEntidad();
+        MutanteEntidad mutanteEntidad = null;
         boolean isMutante = false;
         try {
             entidad.setTexto(adnDTO.getDna().toString());
             isMutante = metodosUtil.isMutantDNA(adnDTO);
             entidad.setMutante(isMutante);
+            mutanteEntidad = mutanteInterfaz.registrarAdn(entidad);
+
         } catch (Exception e) {
             log.error("Error inesperperado al intentar ejecutar la peticion: {}", e);
         }
-        return new ResponseEntity<>(mutanteInterfaz.registrarAdn(entidad), isMutante ? HttpStatus.OK : HttpStatus.FORBIDDEN);
+        return new ResponseEntity<>(mutanteEntidad, isMutante ? HttpStatus.OK : HttpStatus.FORBIDDEN);
     }
 
     @GetMapping()
@@ -62,7 +65,7 @@ public class MutanteControlador {
             int cantidadMutante = mutanteInterfaz.countarMutantes();
             adnEstadisticaDTO.setCountHumanoDna(cantidadHumano);
             adnEstadisticaDTO.setCountMmutantDna(cantidadMutante);
-            adnEstadisticaDTO.setRadio(cantidadMutante /cantidadHumano);
+            adnEstadisticaDTO.setRadio(cantidadMutante / cantidadHumano);
             estadisticaDTOs.add(adnEstadisticaDTO);
         } catch (Exception e) {
             log.error("Error inesperperado al intentar ejecutar la peticion: {}" + e);

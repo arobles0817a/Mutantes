@@ -16,7 +16,7 @@ import lombok.Setter;
 
 /**
  *
- * @author Admin
+ * @author Ing.Arobles
  */
 @Entity
 @Table(name = "adn_resultado")

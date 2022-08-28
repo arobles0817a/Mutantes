@@ -14,6 +14,8 @@ CREATE TABLE
         adn_is_mutante BOOLEAN,
         PRIMARY KEY (adn_id)
     );
+    
+    
 4. En el archivo appication.properties se encuentras las configuraciones de la base de datos, tales como:
 Nombre, usuario, puerto y contraseña. Las cuales deben ser cambiadas al momento de su ejecucion local
 

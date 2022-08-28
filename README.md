@@ -24,4 +24,5 @@ Nombre, usuario, puerto y contraseña. Las cuales deben ser cambiadas al momento
 ![image](https://user-images.githubusercontent.com/31300075/187099576-23e5a601-7803-4340-9378-08376f007259.png)
 
 
-Nota: Para verificar la cobertura del 80% se debe dirigir a la carpeta site/jacoco. En este lugar se encuentra el reporte de coberturas. 
+Nota: Para verificar la cobertura del 80% se debe dirigir a la carpeta site/jacoco. En este lugar se encuentra el reporte de coberturas.
+La aplicacion tambien se encuentra documentada a nivel de codigo fuente con swagger. Si se quiere hacer uso de esta documentacion se debe colocar la siguiente ruta en el navegador  [localhost:8080/api](http://localhost:8080/api/)

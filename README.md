@@ -20,6 +20,7 @@ CREATE TABLE
 Nombre, usuario, puerto y contraseña. Las cuales deben ser cambiadas al momento de su ejecucion local
 
 ![image](https://user-images.githubusercontent.com/31300075/187099381-d39c3f8d-c343-4c14-9ce1-272aa922ee62.png)
+
 ![image](https://user-images.githubusercontent.com/31300075/187099576-23e5a601-7803-4340-9378-08376f007259.png)
 
 

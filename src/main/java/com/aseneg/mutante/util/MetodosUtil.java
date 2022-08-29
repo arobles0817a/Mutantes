@@ -28,7 +28,7 @@ public class MetodosUtil {
         }
         return isMutualDna;
     }
-    private char[][] listaMatrizAdn(AdnDTO adnDTO) {
+    public char[][] listaMatrizAdn(AdnDTO adnDTO) {
         int vectorLength = adnDTO.getDna().size();
         char[][] dna = new char[vectorLength][vectorLength];
 

@@ -28,6 +28,7 @@ La aplicacion se encuentra implementada en Java. Se trabajo en el framework spri
 
     Nota: Para verificar la cobertura del 80% se debe dirigir a la carpeta site/jacoco. En este lugar se encuentra el reporte de coberturas.
     La aplicacion tambien se encuentra documentada a nivel de codigo fuente con swagger. Si se quiere hacer uso de esta documentacion se debe colocar la siguiente ruta en el navegador  [localhost:8080/api](http://localhost:8080/api/) o en su defecto https://mutantes-aseneg.herokuapp.com/api
+    
     Se anexa imagen de la cobertura y documentacion de la aplicacion:
 
     ![image](https://user-images.githubusercontent.com/31300075/187100006-2890e1a9-e8bf-4f15-90b5-edc374129c83.png)

@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.aseneg.mutante.interfaz;
+package com.aseneg.mutante.servicio;
 import com.aseneg.mutante.entidad.MutanteEntidad;
 
 /**
  *
  * @author Ing.Arobles
  */
-public interface MutanteInterfaz {
+public interface MutanteServicio {
 
     public MutanteEntidad registrarAdn(MutanteEntidad mutanteEntidad);
 

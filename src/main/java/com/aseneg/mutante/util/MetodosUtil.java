@@ -6,13 +6,13 @@
 package com.aseneg.mutante.util;
 
 import com.aseneg.mutante.dto.AdnDTO;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author Ing.Arobles
  */
-@Configuration
+@Component
 public class MetodosUtil {
     public boolean isMutantDNA(AdnDTO adnDTO) {
         boolean isMutualDna = false;
@@ -38,5 +38,4 @@ public class MetodosUtil {
         }
         return dna;
     }
-
 }

@@ -3,23 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.aseneg.mutante.interfaz.impl;
+package com.aseneg.mutante.servicio.impl;
 
 import com.aseneg.mutante.entidad.MutanteEntidad;
-import com.aseneg.mutante.interfaz.MutanteInterfaz;
 import com.aseneg.mutante.repositorio.MutanteRepositorio;
 import org.springframework.stereotype.Service;
+import com.aseneg.mutante.servicio.MutanteServicio;
 
 /**
  *
  * @author Ing. Arobles
  */
 @Service
-public class MutanteInterfazImpl implements MutanteInterfaz {
+public class MutanteServicioImpl implements MutanteServicio {
 
     private final MutanteRepositorio mutanteRepositorio;
 
-    public MutanteInterfazImpl(MutanteRepositorio mutanteRepositorio) {
+    public MutanteServicioImpl(MutanteRepositorio mutanteRepositorio) {
         this.mutanteRepositorio = mutanteRepositorio;
     }
 

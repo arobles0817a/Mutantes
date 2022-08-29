@@ -65,7 +65,7 @@ public class MutanteControlador {
             int cantidadMutante = mutanteInterfaz.countarMutantes();
             adnEstadisticaDTO.setCountHumanoDna(cantidadHumano);
             adnEstadisticaDTO.setCountMmutantDna(cantidadMutante);
-            adnEstadisticaDTO.setRadio(cantidadMutante / cantidadHumano);
+            adnEstadisticaDTO.setRadio(cantidadHumano==0 ? 0: cantidadMutante / cantidadHumano);
             estadisticaDTOs.add(adnEstadisticaDTO);
         } catch (Exception e) {
             log.error("Error inesperperado al intentar ejecutar la peticion: {}" + e);

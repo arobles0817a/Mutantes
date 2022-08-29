@@ -16,8 +16,8 @@ CREATE TABLE
     );
     
     
-4. En el archivo appication.properties se encuentras las configuraciones de la base de datos, tales como:
-Nombre, usuario, puerto y contraseña. Las cuales deben ser cambiadas al momento de su ejecucion local
+4. En el archivo application.properties se encuentran las configuraciones de la base de datos, tales como:
+Nombre, usuario, puerto y contraseña.Estas deben ser cambiadas al momento de su ejecucion local, ya que la base de datos no se encuentra alojada en la nube
 
 ![image](https://user-images.githubusercontent.com/31300075/187099381-d39c3f8d-c343-4c14-9ce1-272aa922ee62.png)
 
